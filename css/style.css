@@ -1,0 +1,427 @@
+/* ---Google Fonts--- */
+
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Pacifico&display=swap');
+
+/* ---Style for Body---- */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+/* ---- Nav section----- */
+header {
+  background: #2d25a0;
+  margin: 0px;
+  padding: 0px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  width: 1140px;
+  margin: auto;
+  padding-top: 41px;
+}
+.menu {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.menu li {
+  list-style: none;
+  margin-right: 38px;
+}
+.menu li a:hover {
+  color: darkgrey;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.menu-icon {
+  display: none;
+}
+.btn {
+  text-decoration: none;
+  color: #e7dede;
+  background: #f0065b;
+  padding: 10px 24px;
+  display: inline-flex;
+  align-items: center;
+}
+.btn-icon {
+  margin-right: 10px;
+  font-size: 22px;
+  line-height: 22px;
+}
+.btn-title {
+  font-size: 18px;
+  line-height: 26px;
+}
+.btn:hover {
+  color: rgb(182, 170, 170);
+}
+
+/* ---Poster--- */
+
+.poster {
+  display: flex;
+  justify-content: center;
+  padding: 55px 0px 75px 0px;
+}
+.poster-title {
+  margin-right: 100px;
+}
+.poster-title h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  width: 485px;
+  height: 230px;
+  margin-bottom: 27px;
+}
+.btn-arrow {
+  margin-left: 8px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.poster-image:hover {
+  position: relative;
+  transform: scale(1) rotate(60deg);
+  transition-duration: 0.5s;
+  animation: transform .10s ease-in ;
+}
+
+/* ---Footballers--- */
+
+.footballers {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  width: 1050px;
+  margin: auto;
+  margin-top: 70px;
+}
+.footballer {
+  width: 300px;
+  padding: 15px 15px 33px 15px;
+}
+.footballer:hover {
+  position: relative;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+.footballer h3 {
+  font-size: 28px;
+  line-height: 40px;
+  color: #10121a;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.footballer p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #3d3a3a;
+}
+
+/* ---Highlights--- */
+
+.highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 165px;
+}
+.highlight-title {
+  width: 469px;
+  margin-right: 65px;
+}
+.highlight-title h1 {
+  font-size: 60px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.highlight-title p {
+  font-size: 16px;
+  line-height: 28px;
+  color:gray;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+
+
+.highlight-image:hover {
+  position: relative;
+  transform: scale(1) rotate(-60deg);
+  transition-duration: 0.5s;
+  animation: sliding 1s ease-in-out 0.5s infinite alternate;
+  animation-play-state: running;
+}
+
+/* ---Footer--- */
+
+footer {
+  width: 484px;
+  margin: 158px auto 63px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin-right: 35px;
+}
+.logo-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 72.5806px;
+  line-height: 72px;
+  color: #10437a;
+}
+.social-icon {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 20px auto;
+}
+.fab {
+  font-size: 17px;
+  color: #969bab;
+}
+footer p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+}
+
+/* --- Mobile Responsive with Media Quary -- */
+
+@media only screen and (max-width: 767px) {
+  
+  /* ---Responsive Navbar--- */
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    padding-top: 33px;
+  }
+  .menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    height: 100%;
+    margin-right: 0px;
+  }
+  .menu li {
+    margin-right: 0px;
+  }
+  .menu-icon {
+    display: block;
+    margin-right: 0px;
+  }
+  .fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .fa-bars:hover {
+    color: #969bab;
+  }
+  .menu-list {
+    display: none;
+  }
+  /* ---Responsive Poster---- */
+  .poster {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr;
+    padding: 50px 0px;
+  }
+  .poster-title {
+    width: 278px;
+    margin: auto;
+  }
+  .poster-title h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #ffffff;
+    width: 278px;
+    height: 138px;
+    margin-bottom: 27px;
+    margin-top: 0px;
+  }
+  .poster-image {
+    margin: auto;
+  }
+  .poster-image img {
+    width: 330px;
+  }
+
+  /* ---Footballers--- */
+  .footballers {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    grid-row-gap: 24px;
+    width: 330px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  /* ---Highlights--- */
+
+  .highlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    width: 330px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  .highlight-title {
+    width: 330px;
+    margin-right: 0px;
+  }
+  .highlight-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 294px;
+    height: 80px;
+  }
+  .highlight-image img {
+    width: 330px;
+  }
+  /* ---Footer--- */
+  footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    height: 63px;
+    margin-right: 25px;
+  }
+  .logo-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+/* ---Tablet Responsive with Media Query--- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* ---Navbar--- */
+  .navigation {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  .menu li {
+    margin-right: 25px;
+  }
+  /* ---Poster--- */
+
+  .poster {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  .poster-title {
+    margin: 0px;
+  }
+  .poster-title h1 {
+    font-size: 46px;
+    line-height: 60px;
+    width: 350px;
+    height: 180px;
+    margin-bottom: 27px;
+    margin-top: 0px;
+  }
+  .poster-image {
+    margin: 0px;
+  }
+  .poster-image img {
+    width: 450px;
+  }
+
+  /* ---Footballers---- */
+
+  .footballers {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+    grid-row-gap: 24px;
+    width: 690px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  /* ---Highlights---- */
+  
+  .highlight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    margin: 0px;
+  }
+  .highlight-title {
+    width: 380px;
+    margin-right: 0px;
+  }
+  .highlight-title h1 {
+    font-size: 46px;
+    line-height: 60px;
+    width: 350px;
+    height: 180px;
+  }
+  .highlight-image img {
+    width: 450px;
+    margin: 0px;
+  }
+  /* ---Footer--- */
+
+  footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    height: 80px;
+    margin-right: 25px;
+  }
+  .logo-title {
+    font-size: 70px;
+    line-height: 70px;
+    
+  }
+
+ 
+
+}
