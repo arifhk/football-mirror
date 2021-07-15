@@ -91,7 +91,7 @@ header {
 }
 .poster-image:hover {
   position: relative;
-  transform: scale(1) rotate(60deg);
+  transform: scale(1) rotate(280deg);
   transition-duration: 0.5s;
   animation: transform .10s ease-in ;
 }
@@ -160,7 +160,7 @@ header {
 
 .highlight-image:hover {
   position: relative;
-  transform: scale(1) rotate(-60deg);
+  transform: scale(1) rotate(360deg);
   transition-duration: 0.5s;
   animation: sliding 1s ease-in-out 0.5s infinite alternate;
   animation-play-state: running;
