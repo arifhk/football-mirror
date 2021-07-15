@@ -157,14 +157,34 @@ header {
 }
 
 
-
 .highlight-image:hover {
   position: relative;
   transform: scale(1) rotate(360deg);
   transition-duration: 0.5s;
-  animation: sliding 1s ease-in-out 0.5s infinite alternate;
-  animation-play-state: running;
+  
 }
+
+
+.match-title{
+    background: #2d25a0;
+    margin: 0px;
+    padding: 0px;
+    color: #e7dede;
+    text-align: center;
+
+  }
+
+  .rank-title{
+    
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+
+  } 
+
 
 /* ---Footer--- */
 
@@ -211,7 +231,7 @@ footer p {
 
 @media only screen and (max-width: 767px) {
   
-  /* ---Responsive Navbar--- */
+  /* ---Responsive Navigation--- */
 
   .navigation {
     display: flex;
@@ -399,6 +419,9 @@ footer p {
     width: 450px;
     margin: 0px;
   }
+
+
+
   /* ---Footer--- */
 
   footer {
